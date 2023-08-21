@@ -1,0 +1,17 @@
+{
+  "name": "highlightjs-ballerina",
+  "version": "1.0.0",
+  "description": "Ballerina language support for highlight.js",
+  "main": "src/languages/ballerina.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Ballerina",
+    "hljs",
+    "highlightjs",
+    "highlight.js"
+  ],
+  "author": "",
+  "license": "Apache-2.0"
+}
