@@ -180,6 +180,7 @@ export default function (hljs) {
         relevance: 0,
       },
     ],
+    relevance: 0,
   };
 
   const QUOTE_STRING_MODE = {
@@ -216,6 +217,7 @@ export default function (hljs) {
     scope: "operator",
     match:
       /(!|%|\+|\-|\*|~=|===|==|=|!=|!==|<|>|&|\||\?:|\.\.\.|<=|>=|&&|\|\||~|>>|>>>)/,
+    relevance: 0,
   };
 
   const VARIABLE_MODE = {
@@ -245,18 +247,25 @@ export default function (hljs) {
         ],
       },
     ],
+    relevance: 0,
   };
 
   const TYPE_MODE = {
     variants: [
       {
-        begin: [/type/, /\s+/, /\w+/, /\s+/, /(?:\w|\s|\&)+/, /\{/],
+        begin: [/type/, /\s+/, /\w+/, /\s+/, /(?:\w|\&)+/, /\{/],
         end: /\}/,
         beginScope: {
           1: "keyword",
           3: "title.class",
           5: "keyword",
         },
+        contains: [
+          {
+            match: /\&/,
+            relevance: 0,
+          },
+        ],
       },
       {
         begin: [/=/, /\s*\{/],
@@ -269,6 +278,9 @@ export default function (hljs) {
             match: /:/,
             scope: "keyword",
           },
+          hljs.C_LINE_COMMENT_MODE,
+          STRING_MODE,
+          NUMBER_MODE,
         ],
       },
     ],
@@ -288,6 +300,7 @@ export default function (hljs) {
     excludeBegin: true,
     excludeEnd: true,
     subLanguage: "xml",
+    relevance: 2,
   };
 
   const PARAMS = {
@@ -312,6 +325,7 @@ export default function (hljs) {
         begin: /\w+/,
       },
     ],
+    relevance: 0,
   };
 
   const TAG_MODE = {
@@ -336,6 +350,7 @@ export default function (hljs) {
       3: "keyword",
       4: "title.function",
     },
+    relevance: 0,
   };
 
   return {
@@ -350,6 +365,7 @@ export default function (hljs) {
           1: "keyword",
           3: "title.class",
         },
+        relevance: 0,
       },
       {
         // functions
@@ -378,6 +394,7 @@ export default function (hljs) {
           },
         ],
         contains: ["self", PARAMS],
+        relevance: 0,
       },
       TYPE_MODE,
       VARIABLE_MODE,
@@ -396,7 +413,7 @@ export default function (hljs) {
       {
         begin: /import (?:ballerina|ballerinax)\/[a-z]+/,
         keywords: "import",
-        relevance: 2,
+        relevance: 4,
       },
     ],
   };
