@@ -1,5 +1,6 @@
 /*
 Language: Ballerina
+Description: Open source, cloud-native programming language optimized for integration
 Requires: xml.js
 Author: Yasith Deelaka <yasitham@wso2.com>
 Website: https://ballerina.io
