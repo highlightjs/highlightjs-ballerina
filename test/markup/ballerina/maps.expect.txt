@@ -3,8 +3,8 @@
 <span class="hljs-keyword">public</span> <span class="hljs-keyword">function</span> <span class="hljs-title function_">main</span>() {
     <span class="hljs-comment">// Creates a `map` constrained by the `int` type.</span>
     <span class="hljs-type">map</span><span class="hljs-operator">&lt;</span><span class="hljs-type">int</span><span class="hljs-operator">&gt;</span> ages <span class="hljs-operator">=</span> {
-        &quot;Tom&quot;<span class="hljs-keyword">:</span> 23,
-        &quot;Jack&quot;<span class="hljs-keyword">:</span> 34
+        <span class="hljs-string">&quot;Tom&quot;</span><span class="hljs-keyword">:</span> <span class="hljs-number">23</span>,
+        <span class="hljs-string">&quot;Jack&quot;</span><span class="hljs-keyword">:</span> <span class="hljs-number">34</span>
     };
 
     <span class="hljs-comment">// Gets the entry for `Tom`.</span>
