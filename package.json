@@ -13,5 +13,8 @@
     "highlight.js"
   ],
   "author": "WSO2",
-  "license": "Apache-2.0"
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "highlight.js": "^11.8.0"
+  }
 }
