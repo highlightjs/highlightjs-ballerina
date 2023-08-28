@@ -1,5 +1,5 @@
 {
-  "name": "highlightjs-ballerina",
+  "name": "@ballerina/highlightjs-ballerina",
   "version": "1.0.0",
   "description": "Ballerina language support for highlight.js",
   "main": "src/languages/ballerina.js",
