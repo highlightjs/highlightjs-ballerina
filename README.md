@@ -1,4 +1,4 @@
-![](./ballerina-logo-white.svg)
+![](./ballerina-swan-lake-logo.svg)
 
 # The Ballerina programming language
 
