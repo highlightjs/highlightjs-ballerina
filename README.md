@@ -63,7 +63,7 @@ If you're using Node / Webpack / Rollup / Browserify, etc, simply require the la
 
 ```js
 var hljs = require('highlightjs');
-var hljsBallerina = require('highlightjs-ballerina');
+var hljsBallerina = require('@ballerina/highlightjs-ballerina');
 
 hljs.registerLanguage('ballerina', hljsBallerina);
 hljs.highlightAll();
