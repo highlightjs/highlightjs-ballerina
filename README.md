@@ -1,4 +1,4 @@
-![](./ballerina-swan-lake-logo.svg)
+<img src="./ballerina-swan-lake-logo.svg" width="75%" height="auto" alt="Ballerina Logo" />
 
 # The Ballerina programming language
 
@@ -8,7 +8,7 @@
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 ![Twitter Follow](https://img.shields.io/twitter/follow/ballerinalang?style=social)
 
-[Ballerina](https://ballerina.io/) is a statically typed, open-source cloud-native programming language developed
+[Ballerina](https://ballerina.io/) is a statically typed, open-source, cloud-native programming language developed
 and supported by [WSO2](https://wso2.com/).
 
 With Ballerina, you could easily develop microservices, API endpoints and integrations,
@@ -23,7 +23,7 @@ and dealing with concurrency is made much more effective.
 It has inherently concurrent first-class language constructs for providing and consuming services.
 
 #### Sequence diagrams
-Sequence diagram based graphical view shows the most fundamental aspect of the semantics of a network distributed application.
+The sequence diagram-based graphical view shows the most fundamental aspect of the semantics of a network-distributed application.
 
 #### Structural typing
 It allows for looser coupling between distributed components and eliminates the friction of data binding.
@@ -39,7 +39,7 @@ This repository offers `highlight.js` support for [Ballerina](https://ballerina.
 
 ## Usage
 
-The first step in setting up syntax highlighting for Ballerina is to setup `highlight.js` library in your webpage or the node app.
+The first step in setting up syntax highlighting for Ballerina is to set up `highlight.js` library in your webpage or the node app.
 
 ### Static website or simple usage
 
@@ -59,7 +59,7 @@ After loading `highlight.js`, load the CDN build of Ballerina located in the `di
 
 ### With node or another build system
 
-If you're using Node / Webpack / Rollup / Browserify, etc, simply require the language module, then register it with Highlight.js.
+If you're using Node / Webpack / Rollup / Browserify, etc., simply require the language module, then register it with Highlight.js.
 
 ```js
 var hljs = require('highlightjs');
