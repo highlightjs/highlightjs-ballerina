@@ -1,4 +1,6 @@
-<img src="./ballerina-swan-lake-logo.svg" width="75%" height="auto" alt="Ballerina Logo" />
+<div align="center">
+  	<img height="auto" width="50%" src="./ballerina-swan-lake-logo.svg" alt="Ballerina Logo"/>
+</div>
 
 # The Ballerina programming language
 
